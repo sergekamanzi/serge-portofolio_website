@@ -1,0 +1,638 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#home{
+    background-image: url(../images/white.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+    height: 500px;  
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+}
+
+.logo {
+    width: 40px;
+    height: auto;
+    cursor: pointer;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li a {
+    color: rgb(17, 17, 17);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links li a:hover{
+    text-decoration: underline;
+    color: rgb(40, 40, 139);
+}
+
+.hamburger {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.head {
+    text-align: center;
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.head h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.head button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid;
+    border-color: black;
+    color: black;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.head button:hover{
+    background-color: rgb(44, 44, 110);
+    color: white;
+}
+
+h1,h2 {
+    font-weight: 200;
+    margin: 0.4em 0;
+}
+
+h1 { font-size: 3.5em; }
+h2 {
+    color: #888;
+    font-size: 2em;
+}
+/*end of section1*/
+/*start of section2*/
+
+#about {
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #2e46b1;
+    display: inline-block; /* Ensures the border applies only to the text */
+    border-bottom: 5px solid rgb(52, 52, 160); /* Adjust the thickness and color of the underline */
+    padding-bottom: 5px; /* Adds space between the text and the underline */
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-img img {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.about-container .about-text p {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #666;
+    text-align: left;
+    font-style: italic;
+}
+/*end of section2 */
+/*start of section3*/
+
+#Projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#Projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #31328d;
+    display: inline-block; /* Ensures the border applies only to the text */
+    border-bottom: 5px solid rgb(57, 57, 170); /* Adjust the thickness and color of the underline */
+    padding-bottom: 5px; /* Adds space between the text and the underline */
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    flex: 1 1 300px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.box .card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: rgb(31, 29, 29);
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card button:hover {
+    background-color: #3932a0;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/*end of section3*/
+/*start of section4*/
+
+#studies {
+    padding: 50px 20px;
+    background-image:   linear-gradient(rgba(52, 52, 139, 0.5), rgba(61, 61, 150, 0.5)), url(../images/studies.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#studies h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #f3f3f5;
+    display: inline-block; /* Ensures the border applies only to the text */
+    border-bottom: 5px solid rgb(224, 224, 230); /* Adjust the thickness and color of the underline */
+    padding-bottom: 5px; /* Adds space between the text and the underline */
+}
+
+.education, .skills {
+    flex: 1;
+    margin: 20px;
+}
+
+.education p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #eeebeb;
+    margin-bottom: 20px;
+}
+
+.education p i{
+    font-size: 14px;
+}
+
+.skills ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skills li {
+    font-size: 1em;
+    background-color: transparent;
+    color: rgb(24, 23, 23);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 1px solid;
+    color: rgb(233, 228, 228);
+}
+
+#studies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/*end of section4*/
+/*start of section5*/
+
+#contact {
+    padding: 50px 20px;
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#contact h2{
+    color: rgb(46, 46, 158);
+    display: inline-block; /* Ensures the border applies only to the text */
+    border-bottom: 5px solid rgb(53, 53, 158); /* Adjust the thickness and color of the underline */
+    padding-bottom: 5px; /* Adds space between the text and the underline */
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form button{
+   width: 300px;
+   margin-left: 30px;
+}
+
+.form-group input{
+     width: 250px;
+     height: 30px;
+     color: transparent;
+     margin-right: 20px;
+}
+
+.form-group textarea{
+    width: 250px;
+    height: 80px;
+    margin-right: 40px;
+    color: transparent;
+}
+
+
+.contact-info {
+    flex: 1;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin: 10px 0;
+    font-style: normal;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #333;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .contact-info {
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+/*start of responsive section1*/
+/* Media Query for Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .head h2 {
+        font-size: 30px;
+    }
+
+    .head button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Query for Large Mobiles (480px - 767px) */
+@media (max-width: 767px) {
+    #home {
+        height: 350px;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        padding: 20px;
+        background-color: #f7f3f3;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+        color: black;
+    }
+
+    .head h2 {
+        font-size: 28px;
+    }
+
+    .head button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Media Query for Small Mobiles (320px - 479px) */
+@media (max-width: 479px) {
+    #home {
+        height: 350px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .hamburger {
+        display: block;
+        font-size: 20px;
+        margin-left: auto;
+        color: black;
+    }
+
+    .nav-links {
+        padding: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .head h2 {
+        font-size: 24px;
+    }
+
+    .head button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* Media Query for Large Desktops (1440px and above) */
+@media (min-width: 1440px) {
+    #home {
+        height: 600px;
+    }
+
+    .navbar {
+        padding: 30px;
+    }
+
+    .logo {
+        width: 50px;
+    }
+
+    .nav-links li a {
+        font-size: 20px;
+    }
+
+    .head h2 {
+        font-size: 40px;
+    }
+
+    .head button {
+        font-size: 18px;
+        padding: 12px 24px;
+    }
+}
+
+/*end of responsive section1*/
+/*start of responsive section2*/
+
+/* Media Query for Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .about-text p {
+        font-size: 1em;
+        text-align: left;
+
+       
+    }
+}
+
+/* Media Query for Large Mobiles (480px - 767px) */
+@media (max-width: 767px) {
+    .about-text p{
+        padding: 30px;
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Desktops (1024px and above) */
+@media (min-width: 1024px) {
+    #about {
+        padding: 80px 40px;
+    }
+
+    #about h2 {
+        font-size: 3em;
+    }
+
+    .about-img img {
+        max-width: 350px;
+    }
+
+    .about-text p {
+        font-size: 1.3em;
+        text-align: left;
+    }
+}
+
+/*end of section2 responsive */
+/*start of section3 responsive */
+
+/* Media Query for Tablets (768px - 1024px) */
+@media (min-width: 768px) {
+    .box {
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    .card {
+        max-width: 280px;
+    }
+
+    .card h4 {
+        font-size: 1.4em;
+    }
+
+    .card p {
+        font-size: 0.95em;
+    }
+}
+
+/* Media Query for Large Mobiles (480px - 767px) */
+@media (max-width: 767px) {
+    .about-text p{
+        padding: 30px;
+        font-size: 14px;
+    }
+}
+
+
+/* Media Query for Desktops (1024px and above) */
+@media (min-width: 1024px) {
+    #Projects {
+        padding: 80px 40px;
+    }
+
+    #Projects h2 {
+        font-size: 3em;
+    }
+
+    .box {
+        justify-content: space-around;
+    }
+
+    .card {
+        max-width: 300px;
+    }
+
+    .card h4 {
+        font-size: 1.6em;
+    }
+
+    .card p {
+        font-size: 1.1em;
+    }
+}
+
+/*end of section4 responsive */
+/*start of section5 responsive*/
+
+@media (min-width: 768px) {
+    #studies {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .education, .skills {
+        max-width: 45%;
+    }
+
+    .skills ul {
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1024px) {
+    #studies {
+        padding: 70px 50px;
+    }
+
+    .education p {
+        font-size: 1.3em;
+    }
+
+    .skills li {
+        font-size: 1.1em;
+        padding: 12px 18px;
+    }
+}
